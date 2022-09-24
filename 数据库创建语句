@@ -1,0 +1,22 @@
+1.user_account表
+
+CREATE TABLE `javaspringboot`.`user_account`  (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `userid` varchar(255) NOT NULL,
+  `passweord` varchar(255) NOT NULL,
+  `status` bigint NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`)
+);
+
+2.user_info表
+CREATE TABLE `javaspringboot`.`user_info`  (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `userid` varchar(255) NOT NULL,
+  `age` int NOT NULL DEFAULT 20,
+  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
+  `address` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
+  `sex` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
+  `create_time` datetime(255) NOT NULL DEFAULT 0,
+  `status` bigint NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`)
+);
