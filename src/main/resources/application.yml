@@ -1,5 +1,7 @@
 spring:
   #添加静态资源
+  profiles:
+    active: dev
   datasource:
     url: jdbc:mysql://localhost:3306/javaspringboot?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
     username: root

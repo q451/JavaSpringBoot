@@ -1,4 +1,4 @@
-package model;
+package com.example.demo.model;
 
 public class UserAccount {
     private String userid;
@@ -28,4 +28,10 @@ public class UserAccount {
     public void setUserid(String userid) {
         this.userid = userid;
     }
+
+//    public UserAccount(String userid,String password,Integer status){
+//        this.userid = userid;
+//        this.password = password;
+//        this.status = status;
+//    }
 }
