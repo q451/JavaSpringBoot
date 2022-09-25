@@ -14,8 +14,12 @@
 <!--        select userid from user_account where userid = #{userid}-->
 <!--    </select>-->
     <select id="findUser" resultType="com.example.demo.model.UserAccount">
-        select userid from user_account where userid = #{userid}
+        select * from user_account where userid = #{userid}
     </select>
+
+<!--    <select id="selectAllUser" resultType="com.example.demo.model.UserAccount">-->
+<!--        select * from user_account where status = #{status}-->
+<!--    </select>-->
 <!--    <update id="">-->
 
 <!--    </update>-->

@@ -8,5 +8,7 @@ public interface UserAccountMapper {
 
     UserAccount findUser(String userid);
 
+//    UserAccount selectAllUser(int status);
+
 
 }
