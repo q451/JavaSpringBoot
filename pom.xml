@@ -16,6 +16,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -25,6 +26,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+<!--			<version>2.1.0</version>-->
 		</dependency>
 
 		<dependency>
@@ -38,6 +45,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
 
 	</dependencies>
 
@@ -48,6 +60,31 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+<!--		<resources>-->
+<!--			<resource>-->
+<!--				<directory>src/main/java</directory>-->
+<!--				<excludes>-->
+<!--					<exclude>**/*.properties</exclude>-->
+<!--					<exclude>**/*.xml</exclude>-->
+<!--				</excludes>-->
+<!--				<filtering>false</filtering>-->
+<!--			</resource>-->
+
+<!--			<resource>-->
+<!--				<directory>src/main/resources</directory>-->
+<!--				<includes>-->
+<!--					<include>**/*.properties</include>-->
+<!--					<include>**/*.yml</include>-->
+<!--					<include>**/*.xml</include>-->
+<!--				</includes>-->
+<!--				<filtering>false</filtering>-->
+<!--			</resource>-->
+
+<!--			<resource>-->
+<!--				<directory>src/test/resources</directory>-->
+<!--			</resource>-->
+<!--		</resources>-->
+
 	</build>
 
 </project>

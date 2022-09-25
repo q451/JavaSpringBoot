@@ -1,9 +1,20 @@
 package com.example.demo.model;
 
+import java.util.Objects;
+
 public class UserAccount {
     private String userid;
+    private int id;
     private String password;
     private int status;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getUserid() {
         return userid;
@@ -29,9 +40,26 @@ public class UserAccount {
         this.userid = userid;
     }
 
-//    public UserAccount(String userid,String password,Integer status){
-//        this.userid = userid;
-//        this.password = password;
-//        this.status = status;
-//    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UserAccount that = (UserAccount) o;
+        return id == that.id && status == that.status && Objects.equals(userid, that.userid) && Objects.equals(password, that.password);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(userid, id, password, status);
+    }
+
+    @Override
+    public String toString() {
+        return "UserAccount{" +
+                "userid='" + userid + '\'' +
+                ", id=" + id +
+                ", password='" + password + '\'' +
+                ", status=" + status +
+                '}';
+    }
 }

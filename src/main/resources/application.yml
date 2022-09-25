@@ -2,10 +2,14 @@ spring:
   #添加静态资源
   profiles:
     active: dev
+  mybatis:
+    mapper-locations: classpath:mapper/*.xml
   datasource:
     url: jdbc:mysql://localhost:3306/javaspringboot?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+
 server:
   port: 9001

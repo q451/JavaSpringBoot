@@ -1,10 +1,10 @@
 package com.example.demo.controller;
 
+import com.example.demo.mapper.UserAccountMapper;
 import com.example.demo.model.UserAccount;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.demo.service.UserAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import java.util.List;
@@ -15,7 +15,8 @@ import java.util.Map;
 public class UserController{
     @Autowired
     private JdbcTemplate jdbcTemplate;
-
+    @Autowired
+    private  UserAccountMapper userAccountMapper;
     @RequestMapping("/select")
     public List<Map<String,Object>> userList() {
         String sql = "select * from user_account";
@@ -47,6 +48,13 @@ public class UserController{
         String sql = "delete from user_account where userid = ?";
         jdbcTemplate.update(sql,userid);
         return "账户删除成功";
+    }
+
+    @RequestMapping("/find")
+    public UserAccount FindUserByUserid(){
+        UserAccount userAccount = userAccountMapper.findUser("19301105");
+        return userAccount;
+
     }
 
 }
