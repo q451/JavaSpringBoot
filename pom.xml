@@ -45,10 +45,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!--		jumit 配置-->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<!--		日志配置      -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
 		</dependency>
 
 	</dependencies>
@@ -60,31 +67,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-<!--		<resources>-->
-<!--			<resource>-->
-<!--				<directory>src/main/java</directory>-->
-<!--				<excludes>-->
-<!--					<exclude>**/*.properties</exclude>-->
-<!--					<exclude>**/*.xml</exclude>-->
-<!--				</excludes>-->
-<!--				<filtering>false</filtering>-->
-<!--			</resource>-->
-
-<!--			<resource>-->
-<!--				<directory>src/main/resources</directory>-->
-<!--				<includes>-->
-<!--					<include>**/*.properties</include>-->
-<!--					<include>**/*.yml</include>-->
-<!--					<include>**/*.xml</include>-->
-<!--				</includes>-->
-<!--				<filtering>false</filtering>-->
-<!--			</resource>-->
-
-<!--			<resource>-->
-<!--				<directory>src/test/resources</directory>-->
-<!--			</resource>-->
-<!--		</resources>-->
-
 	</build>
 
 </project>

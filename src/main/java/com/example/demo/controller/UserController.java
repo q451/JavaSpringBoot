@@ -14,7 +14,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import javax.sql.rowset.serial.SerialException;
 import java.util.List;
 import java.util.Map;
-//@Controller
+//@Controller +ResponseBody
 @RestController
 @RequestMapping("/user")
 
