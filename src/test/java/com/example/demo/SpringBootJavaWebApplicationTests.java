@@ -1,29 +1,27 @@
 package com.example.demo;
 
+import com.example.demo.base.RedisBase;
 import com.example.demo.mapper.UserAccountMapper;
 import com.example.demo.model.UserAccount;
+import com.example.demo.util.RedisUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import javax.annotation.Resource;
+
 @SpringBootTest
 class SpringBootJavaWebApplicationTests {
-	@Autowired
-	JdbcTemplate jdbcTemplate;
-//	@Autowired
-//	UserAccountMapper userAccountMapper;
+	//这是redis封装的类
+	@Resource
+	private RedisUtil redisUtil;
 	@Test
 	void contextLoads() {
-		String sql = "SELECT count(*) FROM user_account";
-		Integer integer = jdbcTemplate.queryForObject(sql, Integer.class);
-		System.out.println(integer);
-//		UserAccount userAccount = new UserAccount();
-//		userAccount.setUserid("20220924");
-//		userAccount.setPassword("20220824");
-//		Integer row = userAccountMapper.insertOneUser(userAccount);
-//
-//		System.out.println(row);
+		redisUtil.set("name","杨小平");
+
+		System.out.println(redisUtil.get("name"));
+
 	}
 
 }

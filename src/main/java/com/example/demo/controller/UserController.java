@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.base.RedisBase;
 import com.example.demo.mapper.UserAccountMapper;
 import com.example.demo.model.UserAccount;
 import com.example.demo.service.InterfaceUserAccount;
@@ -55,5 +56,21 @@ public class UserController{
         }
 
         return result;
+    }
+
+    @RequestMapping("/login")
+    public String login(UserAccount userAccount){
+
+//        RedisBase redis = new RedisBase();
+//        redis.set("name","杨小平");
+//        String name = (String) redis.get("name");
+
+        String userid = userAccount.getUserid();
+        String password = userAccount.getPassword();
+
+        UserAccount userInfo = userAccountMapper.findUser(userid);
+        String userPassword = userInfo.getPassword();
+
+        return userPassword;
     }
 }
