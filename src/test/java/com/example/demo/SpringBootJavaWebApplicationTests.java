@@ -19,9 +19,8 @@ class SpringBootJavaWebApplicationTests {
 	@Test
 	void contextLoads() {
 		redisUtil.set("name","杨小平");
-
+		redisUtil.get("name");
 		System.out.println(redisUtil.get("name"));
-
 	}
 
 }
