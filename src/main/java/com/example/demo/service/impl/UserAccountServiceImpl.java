@@ -25,6 +25,21 @@ public class UserAccountServiceImpl implements InterfaceUserAccount {
         if (raw != 1){
             throw new ServiceException("数据插入失败");
         }
+    }
+
+    public void login(UserAccount userAccount) {
+        //获取用户输入的密码和账号
+        String userid = userAccount.getUserid();
+        String password = userAccount.getPassword();
+        UserAccount result = userAccountMapper.findUser(userid);
+
+        if (result == null){
+            throw new UserIdUsedException("用户不存在，请注册账号");
+        }
+        //获取用户输入的密码和数据库密码判断
+        if (result.getPassword() != password){
+            throw new ServiceException("用户输入密码错误");
+        }
 
     }
 }

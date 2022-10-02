@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.UserInfoMapper">
+    <insert id="insertOneUserInfo" useGeneratedKeys="true" keyProperty="id">
+        insert into user_info (userid, name, create_time) values (#{userid},#{name},#{create_time})
+    </insert>
+
+    <select id="isExistUser" resultType="com.example.demo.model.UserInfo">
+        select * from user_info where userid = #{userid}
+    </select>
+
+<!--    <select id="selectAllUser" resultType="com.example.demo.model.UserAccount">-->
+<!--        select * from user_account where status = #{status}-->
+<!--    </select>-->
+<!--    <update id="">-->
+
+<!--    </update>-->
+
+<!--    <delete id="">-->
+
+<!--    </delete>-->
+</mapper>

@@ -1,0 +1,311 @@
+2022-10-01 20:19:23.271  INFO 20836 --- [main] c.e.demo.SpringBootJavaWebApplication    : Starting SpringBootJavaWebApplication using Java 1.8.0_261 on DESKTOP-1ID0S5B with PID 20836 (D:\githubOpenCode\SpringBootJavaWeb\target\classes started by iu in D:\githubOpenCode\SpringBootJavaWeb)
+2022-10-01 20:19:23.393  INFO 20836 --- [main] c.e.demo.SpringBootJavaWebApplication    : The following 1 profile is active: "dev"
+2022-10-01 20:19:25.901  INFO 20836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-01 20:19:25.909  INFO 20836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-01 20:19:25.960  INFO 20836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2022-10-01 20:19:26.187 DEBUG 20836 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\com\example\demo\mapper\UserAccountMapper.class]
+2022-10-01 20:19:26.188 DEBUG 20836 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userAccountMapper' and 'com.example.demo.mapper.UserAccountMapper' mapperInterface
+2022-10-01 20:19:26.189 DEBUG 20836 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userAccountMapper'.
+2022-10-01 20:19:30.005  INFO 20836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-10-01 20:19:30.113  INFO 20836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-01 20:19:30.113  INFO 20836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-01 20:19:33.872  INFO 20836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-01 20:19:33.873  INFO 20836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10288 ms
+2022-10-01 20:19:38.168 DEBUG 20836 --- [main] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\mapper\UserAccountMapper.xml]'
+2022-10-01 20:19:39.279 DEBUG 20836 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-01 20:19:39.737 DEBUG 20836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2022-10-01 20:19:39.797 DEBUG 20836 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-01 20:19:39.823 DEBUG 20836 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-01 20:19:40.584  INFO 20836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-10-01 20:19:40.608  INFO 20836 --- [main] c.e.demo.SpringBootJavaWebApplication    : Started SpringBootJavaWebApplication in 19.516 seconds (JVM running for 23.567)
+2022-10-01 20:19:45.472  INFO 20836 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-01 20:19:45.476  INFO 20836 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-01 20:19:45.494 DEBUG 20836 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-10-01 20:19:45.496 DEBUG 20836 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-10-01 20:19:45.496 DEBUG 20836 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-10-01 20:19:45.516 DEBUG 20836 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@79e87abe
+2022-10-01 20:19:45.516 DEBUG 20836 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3062d373
+2022-10-01 20:19:45.517 DEBUG 20836 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-01 20:19:45.517  INFO 20836 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 41 ms
+2022-10-01 20:19:45.595 DEBUG 20836 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/user/login", parameters={multipart}
+2022-10-01 20:19:45.781 DEBUG 20836 --- [http-nio-9001-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.UserController#login(UserAccount)
+2022-10-01 20:19:45.935 DEBUG 20836 --- [http-nio-9001-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2022-10-01 20:19:45.949 DEBUG 20836 --- [http-nio-9001-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5bf68c30] was not registered for synchronization because synchronization is not active
+2022-10-01 20:19:45.981  INFO 20836 --- [http-nio-9001-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-01 20:19:50.961  INFO 20836 --- [http-nio-9001-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-01 20:19:50.966 DEBUG 20836 --- [http-nio-9001-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1304385854 wrapping com.mysql.cj.jdbc.ConnectionImpl@2688a3b6] will not be managed by Spring
+2022-10-01 20:19:51.293 DEBUG 20836 --- [http-nio-9001-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5bf68c30]
+2022-10-01 20:19:51.795 DEBUG 20836 --- [http-nio-9001-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-01 20:19:51.796 DEBUG 20836 --- [http-nio-9001-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.demo.util.JsonResult@61c3adc7]
+2022-10-01 20:19:51.874 DEBUG 20836 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-10-01 20:21:49.233  INFO 20836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-01 20:21:49.544  INFO 20836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-01 20:22:15.050  INFO 15928 --- [main] c.e.demo.SpringBootJavaWebApplication    : Starting SpringBootJavaWebApplication using Java 1.8.0_261 on DESKTOP-1ID0S5B with PID 15928 (D:\githubOpenCode\SpringBootJavaWeb\target\classes started by iu in D:\githubOpenCode\SpringBootJavaWeb)
+2022-10-01 20:22:15.070  INFO 15928 --- [main] c.e.demo.SpringBootJavaWebApplication    : The following 1 profile is active: "dev"
+2022-10-01 20:22:16.580  INFO 15928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-01 20:22:16.589  INFO 15928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-01 20:22:16.670  INFO 15928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+2022-10-01 20:22:17.014 DEBUG 15928 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\com\example\demo\mapper\UserAccountMapper.class]
+2022-10-01 20:22:17.033 DEBUG 15928 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userAccountMapper' and 'com.example.demo.mapper.UserAccountMapper' mapperInterface
+2022-10-01 20:22:17.034 DEBUG 15928 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userAccountMapper'.
+2022-10-01 20:22:19.550  INFO 15928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-10-01 20:22:19.613  INFO 15928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-01 20:22:19.614  INFO 15928 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-01 20:22:20.734  INFO 15928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-01 20:22:20.735  INFO 15928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5535 ms
+2022-10-01 20:22:22.746 DEBUG 15928 --- [main] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\mapper\UserAccountMapper.xml]'
+2022-10-01 20:22:23.281 DEBUG 15928 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-01 20:22:23.475 DEBUG 15928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2022-10-01 20:22:23.521 DEBUG 15928 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-01 20:22:23.549 DEBUG 15928 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-01 20:22:24.069  INFO 15928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-10-01 20:22:24.089  INFO 15928 --- [main] c.e.demo.SpringBootJavaWebApplication    : Started SpringBootJavaWebApplication in 10.982 seconds (JVM running for 14.306)
+2022-10-01 20:23:16.771  INFO 15928 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-01 20:23:16.774  INFO 15928 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-01 20:23:16.776 DEBUG 15928 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-10-01 20:23:16.777 DEBUG 15928 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-10-01 20:23:16.779 DEBUG 15928 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-10-01 20:23:16.804 DEBUG 15928 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3f24ae3e
+2022-10-01 20:23:16.806 DEBUG 15928 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6a86ff8e
+2022-10-01 20:23:16.807 DEBUG 15928 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-01 20:23:16.809  INFO 15928 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 34 ms
+2022-10-01 20:23:16.925 DEBUG 15928 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/user/login", parameters={multipart}
+2022-10-01 20:23:17.108 DEBUG 15928 --- [http-nio-9001-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.UserController#login(UserAccount)
+2022-10-01 20:23:17.281 DEBUG 15928 --- [http-nio-9001-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2022-10-01 20:23:17.309 DEBUG 15928 --- [http-nio-9001-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34bfc23b] was not registered for synchronization because synchronization is not active
+2022-10-01 20:23:17.356  INFO 15928 --- [http-nio-9001-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-01 20:23:21.128  INFO 15928 --- [http-nio-9001-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-01 20:23:21.152 DEBUG 15928 --- [http-nio-9001-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1120357682 wrapping com.mysql.cj.jdbc.ConnectionImpl@385a6849] will not be managed by Spring
+2022-10-01 20:23:21.380 DEBUG 15928 --- [http-nio-9001-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34bfc23b]
+2022-10-01 20:23:21.616 DEBUG 15928 --- [http-nio-9001-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-01 20:23:21.617 DEBUG 15928 --- [http-nio-9001-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.demo.util.JsonResult@37a9133c]
+2022-10-01 20:23:21.683 DEBUG 15928 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-10-01 20:23:32.446  INFO 15928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-01 20:23:32.507  INFO 15928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-01 20:30:39.271  INFO 15852 --- [main] c.e.demo.SpringBootJavaWebApplication    : Starting SpringBootJavaWebApplication using Java 1.8.0_261 on DESKTOP-1ID0S5B with PID 15852 (D:\githubOpenCode\SpringBootJavaWeb\target\classes started by iu in D:\githubOpenCode\SpringBootJavaWeb)
+2022-10-01 20:30:39.290  INFO 15852 --- [main] c.e.demo.SpringBootJavaWebApplication    : The following 1 profile is active: "dev"
+2022-10-01 20:30:40.884  INFO 15852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-01 20:30:40.889  INFO 15852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-01 20:30:40.931  INFO 15852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2022-10-01 20:30:41.092 DEBUG 15852 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\com\example\demo\mapper\UserAccountMapper.class]
+2022-10-01 20:30:41.093 DEBUG 15852 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userAccountMapper' and 'com.example.demo.mapper.UserAccountMapper' mapperInterface
+2022-10-01 20:30:41.093 DEBUG 15852 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userAccountMapper'.
+2022-10-01 20:30:43.387  INFO 15852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-10-01 20:30:43.434  INFO 15852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-01 20:30:43.435  INFO 15852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-01 20:30:45.051  INFO 15852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-01 20:30:45.063  INFO 15852 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5623 ms
+2022-10-01 20:30:47.243 DEBUG 15852 --- [main] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\mapper\UserAccountMapper.xml]'
+2022-10-01 20:30:47.691 DEBUG 15852 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-01 20:30:47.975 DEBUG 15852 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2022-10-01 20:30:48.036 DEBUG 15852 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-01 20:30:48.053 DEBUG 15852 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-01 20:30:48.635  INFO 15852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-10-01 20:30:48.656  INFO 15852 --- [main] c.e.demo.SpringBootJavaWebApplication    : Started SpringBootJavaWebApplication in 10.642 seconds (JVM running for 12.837)
+2022-10-01 20:30:49.934  INFO 15852 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-01 20:30:49.935  INFO 15852 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-01 20:30:49.936 DEBUG 15852 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-10-01 20:30:49.936 DEBUG 15852 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-10-01 20:30:49.937 DEBUG 15852 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-10-01 20:30:49.938 DEBUG 15852 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@106f393c
+2022-10-01 20:30:49.938 DEBUG 15852 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@46c30f2
+2022-10-01 20:30:49.938 DEBUG 15852 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-01 20:30:49.938  INFO 15852 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-01 20:30:49.966 DEBUG 15852 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/user/login", parameters={multipart}
+2022-10-01 20:30:50.043 DEBUG 15852 --- [http-nio-9001-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.UserController#login(UserAccount)
+2022-10-01 20:30:50.169 DEBUG 15852 --- [http-nio-9001-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2022-10-01 20:30:50.189 DEBUG 15852 --- [http-nio-9001-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76c0d808] was not registered for synchronization because synchronization is not active
+2022-10-01 20:30:50.211  INFO 15852 --- [http-nio-9001-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-01 20:30:54.254  INFO 15852 --- [http-nio-9001-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-01 20:30:54.258 DEBUG 15852 --- [http-nio-9001-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1441367363 wrapping com.mysql.cj.jdbc.ConnectionImpl@17361d5c] will not be managed by Spring
+2022-10-01 20:30:54.501 DEBUG 15852 --- [http-nio-9001-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76c0d808]
+2022-10-01 20:30:54.617 DEBUG 15852 --- [http-nio-9001-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-01 20:30:54.641 DEBUG 15852 --- [http-nio-9001-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [{code=200, data=UserAccount{userid='19301105', id=1, password='19301105', status=1}, message=登陆成功}]
+2022-10-01 20:30:54.818 DEBUG 15852 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-10-01 20:31:26.252  INFO 15852 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-01 20:31:26.425  INFO 15852 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-01 20:31:45.958  INFO 3292 --- [main] c.e.demo.SpringBootJavaWebApplication    : Starting SpringBootJavaWebApplication using Java 1.8.0_261 on DESKTOP-1ID0S5B with PID 3292 (D:\githubOpenCode\SpringBootJavaWeb\target\classes started by iu in D:\githubOpenCode\SpringBootJavaWeb)
+2022-10-01 20:31:46.000  INFO 3292 --- [main] c.e.demo.SpringBootJavaWebApplication    : The following 1 profile is active: "dev"
+2022-10-01 20:31:47.721  INFO 3292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-01 20:31:47.729  INFO 3292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-01 20:31:47.787  INFO 3292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2022-10-01 20:31:48.062 DEBUG 3292 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\com\example\demo\mapper\UserAccountMapper.class]
+2022-10-01 20:31:48.063 DEBUG 3292 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userAccountMapper' and 'com.example.demo.mapper.UserAccountMapper' mapperInterface
+2022-10-01 20:31:48.063 DEBUG 3292 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userAccountMapper'.
+2022-10-01 20:31:50.319  INFO 3292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-10-01 20:31:50.451  INFO 3292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-01 20:31:50.452  INFO 3292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-01 20:31:51.659  INFO 3292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-01 20:31:51.660  INFO 3292 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5535 ms
+2022-10-01 20:31:53.837 DEBUG 3292 --- [main] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\mapper\UserAccountMapper.xml]'
+2022-10-01 20:31:54.498 DEBUG 3292 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-01 20:31:55.604 DEBUG 3292 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2022-10-01 20:31:55.682 DEBUG 3292 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-01 20:31:55.703 DEBUG 3292 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-01 20:31:56.640  INFO 3292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-10-01 20:31:56.689  INFO 3292 --- [main] c.e.demo.SpringBootJavaWebApplication    : Started SpringBootJavaWebApplication in 12.079 seconds (JVM running for 14.728)
+2022-10-01 20:32:03.309  INFO 3292 --- [http-nio-9001-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-01 20:32:03.310  INFO 3292 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-01 20:32:03.312 DEBUG 3292 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-10-01 20:32:03.312 DEBUG 3292 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-10-01 20:32:03.313 DEBUG 3292 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-10-01 20:32:03.314 DEBUG 3292 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@58c1f099
+2022-10-01 20:32:03.315 DEBUG 3292 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@12ca5d8
+2022-10-01 20:32:03.315 DEBUG 3292 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-01 20:32:03.315  INFO 3292 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-10-01 20:32:03.381 DEBUG 3292 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/user/login", parameters={multipart}
+2022-10-01 20:32:03.667 DEBUG 3292 --- [http-nio-9001-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.UserController#login(UserAccount)
+2022-10-01 20:32:03.835 DEBUG 3292 --- [http-nio-9001-exec-4] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2022-10-01 20:32:03.850 DEBUG 3292 --- [http-nio-9001-exec-4] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13152b5a] was not registered for synchronization because synchronization is not active
+2022-10-01 20:32:03.885  INFO 3292 --- [http-nio-9001-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-01 20:32:07.485  INFO 3292 --- [http-nio-9001-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-01 20:32:07.503 DEBUG 3292 --- [http-nio-9001-exec-4] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1457756849 wrapping com.mysql.cj.jdbc.ConnectionImpl@52cb37f1] will not be managed by Spring
+2022-10-01 20:32:08.107 DEBUG 3292 --- [http-nio-9001-exec-4] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13152b5a]
+2022-10-01 20:32:08.482 DEBUG 3292 --- [http-nio-9001-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-01 20:32:08.517 DEBUG 3292 --- [http-nio-9001-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [{code=200, data=UserAccount{userid='19301105', id=1, password='19301105', status=1}, message=登陆成功, t (truncated)...]
+2022-10-01 20:32:08.907 DEBUG 3292 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-10-01 20:32:47.853 DEBUG 3292 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/user/login", parameters={multipart}
+2022-10-01 20:32:47.988 DEBUG 3292 --- [http-nio-9001-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.UserController#login(UserAccount)
+2022-10-01 20:32:48.085 DEBUG 3292 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2022-10-01 20:32:48.094 DEBUG 3292 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fe1b505] was not registered for synchronization because synchronization is not active
+2022-10-01 20:32:48.210 DEBUG 3292 --- [http-nio-9001-exec-3] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1093026441 wrapping com.mysql.cj.jdbc.ConnectionImpl@52cb37f1] will not be managed by Spring
+2022-10-01 20:32:48.270 DEBUG 3292 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fe1b505]
+2022-10-01 20:32:48.316 DEBUG 3292 --- [http-nio-9001-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-01 20:32:48.319 DEBUG 3292 --- [http-nio-9001-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{code=300, message=用户密码输入错误}]
+2022-10-01 20:32:48.346 DEBUG 3292 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-10-01 20:32:55.693 DEBUG 3292 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/user/login", parameters={multipart}
+2022-10-01 20:32:55.710 DEBUG 3292 --- [http-nio-9001-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.UserController#login(UserAccount)
+2022-10-01 20:32:55.716 DEBUG 3292 --- [http-nio-9001-exec-2] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2022-10-01 20:32:55.716 DEBUG 3292 --- [http-nio-9001-exec-2] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@709b60a2] was not registered for synchronization because synchronization is not active
+2022-10-01 20:32:55.718 DEBUG 3292 --- [http-nio-9001-exec-2] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@2119995585 wrapping com.mysql.cj.jdbc.ConnectionImpl@52cb37f1] will not be managed by Spring
+2022-10-01 20:32:55.724 DEBUG 3292 --- [http-nio-9001-exec-2] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@709b60a2]
+2022-10-01 20:32:55.928 DEBUG 3292 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.NullPointerException
+2022-10-01 20:32:56.034 ERROR 3292 --- [http-nio-9001-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.example.demo.controller.UserController.login(UserController.java:73) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_261]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) [tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_261]
+
+2022-10-01 20:32:56.066 DEBUG 3292 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={multipart}
+2022-10-01 20:32:56.083 DEBUG 3292 --- [http-nio-9001-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-10-01 20:32:56.151 DEBUG 3292 --- [http-nio-9001-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-01 20:32:56.153 DEBUG 3292 --- [http-nio-9001-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat Oct 01 20:32:56 CST 2022, status=500, error=Internal Server Error, path=/user/login}]
+2022-10-01 20:32:56.208 DEBUG 3292 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2022-10-01 20:33:11.254 DEBUG 3292 --- [http-nio-9001-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/user/login", parameters={multipart}
+2022-10-01 20:33:11.263 DEBUG 3292 --- [http-nio-9001-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.UserController#login(UserAccount)
+2022-10-01 20:33:11.264 DEBUG 3292 --- [http-nio-9001-exec-6] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2022-10-01 20:33:11.264 DEBUG 3292 --- [http-nio-9001-exec-6] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b41e54e] was not registered for synchronization because synchronization is not active
+2022-10-01 20:33:11.269 DEBUG 3292 --- [http-nio-9001-exec-6] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1703286358 wrapping com.mysql.cj.jdbc.ConnectionImpl@52cb37f1] will not be managed by Spring
+2022-10-01 20:33:11.271 DEBUG 3292 --- [http-nio-9001-exec-6] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b41e54e]
+2022-10-01 20:33:11.276 DEBUG 3292 --- [http-nio-9001-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-01 20:33:11.276 DEBUG 3292 --- [http-nio-9001-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [{code=200, data=UserAccount{userid='19301105', id=1, password='19301105', status=1}, message=登陆成功, t (truncated)...]
+2022-10-01 20:33:11.278 DEBUG 3292 --- [http-nio-9001-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-10-01 21:04:26.541  INFO 3292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-01 21:04:26.773  INFO 3292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-01 21:33:50.172  INFO 14116 --- [main] c.e.demo.SpringBootJavaWebApplication    : Starting SpringBootJavaWebApplication using Java 1.8.0_261 on DESKTOP-1ID0S5B with PID 14116 (D:\githubOpenCode\SpringBootJavaWeb\target\classes started by iu in D:\githubOpenCode\SpringBootJavaWeb)
+2022-10-01 21:33:50.218  INFO 14116 --- [main] c.e.demo.SpringBootJavaWebApplication    : The following 1 profile is active: "dev"
+2022-10-01 21:33:51.954  INFO 14116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-01 21:33:51.961  INFO 14116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-01 21:33:52.016  INFO 14116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2022-10-01 21:33:52.172 DEBUG 14116 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\com\example\demo\mapper\UserAccountMapper.class]
+2022-10-01 21:33:52.172 DEBUG 14116 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\com\example\demo\mapper\UserInfoMapper.class]
+2022-10-01 21:33:52.173 DEBUG 14116 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userAccountMapper' and 'com.example.demo.mapper.UserAccountMapper' mapperInterface
+2022-10-01 21:33:52.174 DEBUG 14116 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userAccountMapper'.
+2022-10-01 21:33:52.174 DEBUG 14116 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userInfoMapper' and 'com.example.demo.mapper.UserInfoMapper' mapperInterface
+2022-10-01 21:33:52.174 DEBUG 14116 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2022-10-01 21:33:54.661  INFO 14116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-10-01 21:33:54.724  INFO 14116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-01 21:33:54.725  INFO 14116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-01 21:33:55.719  INFO 14116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-01 21:33:55.721  INFO 14116 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5394 ms
+2022-10-01 21:33:57.586 DEBUG 14116 --- [main] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\mapper\UserAccountMapper.xml]'
+2022-10-01 21:33:57.639 DEBUG 14116 --- [main] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\mapper\UserInfoMapper.xml]'
+2022-10-01 21:33:58.107 DEBUG 14116 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-01 21:33:58.277 DEBUG 14116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2022-10-01 21:33:58.325 DEBUG 14116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-01 21:33:58.353 DEBUG 14116 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-01 21:33:58.742  INFO 14116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-10-01 21:33:58.760  INFO 14116 --- [main] c.e.demo.SpringBootJavaWebApplication    : Started SpringBootJavaWebApplication in 9.775 seconds (JVM running for 12.175)
+2022-10-01 21:34:25.014  INFO 14116 --- [http-nio-9001-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-01 21:34:25.026  INFO 14116 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-01 21:34:25.034 DEBUG 14116 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-10-01 21:34:25.035 DEBUG 14116 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-10-01 21:34:25.035 DEBUG 14116 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-10-01 21:34:25.160 DEBUG 14116 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3a47ad29
+2022-10-01 21:34:25.162 DEBUG 14116 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3f136b82
+2022-10-01 21:34:25.162 DEBUG 14116 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-01 21:34:25.162  INFO 14116 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 135 ms
+2022-10-01 21:34:25.444 DEBUG 14116 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/user/register", parameters={multipart}
+2022-10-01 21:34:25.663 DEBUG 14116 --- [http-nio-9001-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.UserController#register(UserAccount)
+2022-10-01 21:34:25.852 DEBUG 14116 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2022-10-01 21:34:25.867 DEBUG 14116 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f7c65d0] was not registered for synchronization because synchronization is not active
+2022-10-01 21:34:25.895  INFO 14116 --- [http-nio-9001-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-01 21:34:29.909  INFO 14116 --- [http-nio-9001-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-01 21:34:29.916 DEBUG 14116 --- [http-nio-9001-exec-3] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1421090183 wrapping com.mysql.cj.jdbc.ConnectionImpl@5b899416] will not be managed by Spring
+2022-10-01 21:34:30.186 DEBUG 14116 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f7c65d0]
+2022-10-01 21:34:30.209 DEBUG 14116 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2022-10-01 21:34:30.210 DEBUG 14116 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5bfb952e] was not registered for synchronization because synchronization is not active
+2022-10-01 21:34:30.211 DEBUG 14116 --- [http-nio-9001-exec-3] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1991077909 wrapping com.mysql.cj.jdbc.ConnectionImpl@5b899416] will not be managed by Spring
+2022-10-01 21:34:30.548 DEBUG 14116 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5bfb952e]
+2022-10-01 21:34:30.549 DEBUG 14116 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2022-10-01 21:34:30.549 DEBUG 14116 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42b601cc] was not registered for synchronization because synchronization is not active
+2022-10-01 21:34:30.550 DEBUG 14116 --- [http-nio-9001-exec-3] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@584946712 wrapping com.mysql.cj.jdbc.ConnectionImpl@5b899416] will not be managed by Spring
+2022-10-01 21:34:30.578 DEBUG 14116 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42b601cc]
+2022-10-01 21:34:30.579 DEBUG 14116 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2022-10-01 21:34:30.579 DEBUG 14116 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ac66e46] was not registered for synchronization because synchronization is not active
+2022-10-01 21:34:30.579 DEBUG 14116 --- [http-nio-9001-exec-3] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1477223091 wrapping com.mysql.cj.jdbc.ConnectionImpl@5b899416] will not be managed by Spring
+2022-10-01 21:34:30.656 DEBUG 14116 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ac66e46]
+2022-10-01 21:34:30.822 DEBUG 14116 --- [http-nio-9001-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-01 21:34:30.824 DEBUG 14116 --- [http-nio-9001-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{code=200, data=UserInfo{userid='110', name='110', email='null', address='null', sex='null', create_ (truncated)...]
+2022-10-01 21:34:31.012 DEBUG 14116 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-10-01 21:37:32.421  INFO 14116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-01 21:37:32.643  INFO 14116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
