@@ -21,6 +21,19 @@ spring:
         min-idle: 2
     timeout: 20000
 
+  mail:
+    host: smtp.qq.com
+    username: 1393371859@qq.com
+    password: hkdxutanxepkhhjg
+    default-encoding: utf-8
+    port: 25
+    charset: UTF-8
+    protocol: smtp
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      mail.smtp.starttls.required: true
+
 
 server:
   port: 9001
