@@ -1,25 +1,24 @@
-package com.example.demo.model;
+package com.example.demo.model.user;
 
 import java.util.Objects;
 
 public class UserInfo {
-
-    private String userid;
+    private int id;
     private String name;
+    private String userid;
     private String email;
-    private String address;
+    private int age;
     private String sex;
+    private String address;
     private String create_time;
     private int status;
-    private int id;
-    private int age;
 
-    public String getUserid() {
-        return userid;
+    public int getId() {
+        return id;
     }
 
-    public void setUserid(String userid) {
-        this.userid = userid;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -30,6 +29,14 @@ public class UserInfo {
         this.name = name;
     }
 
+    public String getUserid() {
+        return userid;
+    }
+
+    public void setUserid(String userid) {
+        this.userid = userid;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -38,12 +45,12 @@ public class UserInfo {
         this.email = email;
     }
 
-    public String getAddress() {
-        return address;
+    public int getAge() {
+        return age;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getSex() {
@@ -52,6 +59,14 @@ public class UserInfo {
 
     public void setSex(String sex) {
         this.sex = sex;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getCreate_time() {
@@ -70,47 +85,31 @@ public class UserInfo {
         this.status = status;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         UserInfo userInfo = (UserInfo) o;
-        return status == userInfo.status && id == userInfo.id && age == userInfo.age && Objects.equals(userid, userInfo.userid) && Objects.equals(name, userInfo.name) && Objects.equals(email, userInfo.email) && Objects.equals(address, userInfo.address) && Objects.equals(sex, userInfo.sex) && Objects.equals(create_time, userInfo.create_time);
+        return id == userInfo.id && age == userInfo.age && status == userInfo.status && Objects.equals(name, userInfo.name) && Objects.equals(userid, userInfo.userid) && Objects.equals(email, userInfo.email) && Objects.equals(sex, userInfo.sex) && Objects.equals(address, userInfo.address) && Objects.equals(create_time, userInfo.create_time);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(userid, name, email, address, sex, create_time, status, id, age);
+        return Objects.hash(id, name, userid, email, age, sex, address, create_time, status);
     }
 
     @Override
     public String toString() {
         return "UserInfo{" +
-                "userid='" + userid + '\'' +
+                "id=" + id +
                 ", name='" + name + '\'' +
+                ", userid='" + userid + '\'' +
                 ", email='" + email + '\'' +
-                ", address='" + address + '\'' +
+                ", age=" + age +
                 ", sex='" + sex + '\'' +
+                ", address='" + address + '\'' +
                 ", create_time='" + create_time + '\'' +
                 ", status=" + status +
-                ", id=" + id +
-                ", age=" + age +
                 '}';
     }
 }

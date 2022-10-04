@@ -1,11 +1,12 @@
-package com.example.demo.model;
+package com.example.demo.model.user;
 
 import java.util.Objects;
 
 public class UserAccount {
-    private String userid;
     private int id;
     private String password;
+    private String userid;
+    private String email;
     private int status;
 
     public int getId() {
@@ -16,28 +17,36 @@ public class UserAccount {
         this.id = id;
     }
 
-    public String getUserid() {
-        return userid;
-    }
-
     public String getPassword() {
         return password;
-    }
-
-    public int getStatus() {
-        return status;
     }
 
     public void setPassword(String password) {
         this.password = password;
     }
 
-    public void setStatus(int status) {
-        this.status = status;
+    public String getUserid() {
+        return userid;
     }
 
     public void setUserid(String userid) {
         this.userid = userid;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 
     @Override
@@ -45,20 +54,21 @@ public class UserAccount {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         UserAccount that = (UserAccount) o;
-        return id == that.id && status == that.status && Objects.equals(userid, that.userid) && Objects.equals(password, that.password);
+        return id == that.id && status == that.status && Objects.equals(password, that.password) && Objects.equals(userid, that.userid) && Objects.equals(email, that.email);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(userid, id, password, status);
+        return Objects.hash(id, password, userid, email, status);
     }
 
     @Override
     public String toString() {
         return "UserAccount{" +
-                "userid='" + userid + '\'' +
-                ", id=" + id +
+                "id=" + id +
                 ", password='" + password + '\'' +
+                ", userid='" + userid + '\'' +
+                ", email='" + email + '\'' +
                 ", status=" + status +
                 '}';
     }
