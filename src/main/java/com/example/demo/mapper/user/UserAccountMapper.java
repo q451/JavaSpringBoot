@@ -7,11 +7,11 @@ import java.util.Map;
 @Mapper
 public interface UserAccountMapper {
     //添加一个用户
-    Map<String,String> add (UserAccount userAccount);
+    void add (UserAccount userAccount);
     //查找一个用户
     UserAccount findByUserid(String userid);
     //修改密码
-    Map<String,String> changePassword (UserAccount userAccount);
+    void changePassword (UserAccount userAccount);
     //所有有效用户
     List<UserAccount> selectAll(int status);
 

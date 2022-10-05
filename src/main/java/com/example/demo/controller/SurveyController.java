@@ -16,14 +16,7 @@ public class SurveyController {
     @Autowired
     private JavaMailSender javaMailSender ;
 
-    @RequestMapping("/send")
-    public boolean sendEmail(){
-//        boolean isScu = email.sendSimpleMail("19301105@bjtu.edu.cn","1111","22222");
-
-        return true;
-    }
-
-    @RequestMapping("getCode")
+    @RequestMapping("get-code")
     public boolean getCode(String email,HttpSession session){
         EmailUtil emailUtil = new EmailUtil();
         String code = emailUtil.randomCode();
