@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.demo.mapper.user.UserAccountMapper">
+
 <!--    <resultMap type="com.example.demo.model.user.UserAccount" id="account_info">-->
 
 <!--        <result column="id" property="id"/>-->
@@ -11,13 +12,13 @@
 <!--        <result column="email" property="email"/>-->
 <!--        <result column="status" property="status"/>-->
 
-<!--        <association property="com.example.demo.model.user.UserInfo">-->
-<!--            <result column="id" property="id"/>-->
+<!--        <association property="userInfo" javaType="com.example.demo.model.user.UserInfo">-->
+<!--            <result column="uid" property="id"/>-->
 <!--            <result column="name" property="name"/>-->
 <!--            <result column="userid" property="userid"/>-->
 <!--            <result column="age" property="age"/>-->
 <!--            <result column="email" property="email"/>-->
-<!--            <result column="status" property="status"/>-->
+<!--            <result column="ustatus" property="status"/>-->
 <!--            <result column="sex" property="sex"/>-->
 <!--            <result column="address" property="address"/>-->
 <!--            <result column="create_time" property="create_time"/>-->
@@ -48,8 +49,13 @@
     </update>
 
 <!--    <select id="unionSelect" resultMap="account_info">-->
-<!--        select * from user_account inner join user_info on user_account.userid = user_info.userid-->
+<!--        select-->
+<!--        user_account.userid, user_account.password,user_account.id, user_account.status, user_account.email,-->
+<!--        user_info.name,user_info.age,user_info.email,user_info.address,user_info.sex,user_info.create_time,user_info.status ustatus,user_info.id uid-->
+<!--        from user_account join user_info on-->
+<!--        user_account.userid = user_info.userid-->
 <!--        and user_account.status = user_info.status-->
+<!--        and user_account.status = 1-->
 <!--    </select>-->
 
 <!--    <delete id="">-->

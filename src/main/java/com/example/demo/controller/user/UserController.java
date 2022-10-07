@@ -1,6 +1,7 @@
 package com.example.demo.controller.user;
 
 import com.example.demo.model.user.UserAccount;
+import com.example.demo.model.user.UserInfo;
 import com.example.demo.service.user.UserService;
 import com.example.demo.util.TokenUtil;
 import org.springframework.stereotype.Service;
@@ -43,5 +44,16 @@ public class UserController {
     @RequestMapping("/change-password")
     public Map<String,Object> ChangePassword (UserAccount userAccount, String pwAgain, String code, HttpSession session){
         return userService.changePasswoed(userAccount,pwAgain,code,session);
+    }
+
+//    @RequestMapping("/union-select")
+//    public List<UserAccount> UnionSelect (){
+//        return userService.unionSelect();
+//    }
+
+    @RequestMapping("/user-info")
+    public List<UserInfo> SelectUserInfoByUserid (String userid){
+
+        return userService.selectUserInfoByUserid(userid);
     }
 }

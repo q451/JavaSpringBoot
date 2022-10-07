@@ -1,7 +1,9 @@
 package com.example.demo.service.user;
 
 import com.example.demo.mapper.user.UserAccountMapper;
+import com.example.demo.mapper.user.UserInfoMapper;
 import com.example.demo.model.user.UserAccount;
+import com.example.demo.model.user.UserInfo;
 import com.example.demo.util.TokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,6 +17,8 @@ import java.util.Map;
 public class UserService {
     @Autowired
     private UserAccountMapper userAccountMapper;
+    @Autowired
+    private UserInfoMapper userInfoMapper;
     /*
     * 列出所有有效用户
     */
@@ -133,5 +137,13 @@ public class UserService {
             }
         }
         return result;
+    }
+
+//    public List<UserAccount> unionSelect(){
+//        return userAccountMapper.unionSelect();
+//    }
+
+    public List<UserInfo> selectUserInfoByUserid(String userid){
+        return userInfoMapper.selectOneUserByUserid(userid);
     }
 }

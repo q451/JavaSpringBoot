@@ -1,5 +1,6 @@
 package com.example.demo.model.user;
 
+import java.util.List;
 import java.util.Objects;
 
 public class UserInfo {
@@ -12,6 +13,25 @@ public class UserInfo {
     private String address;
     private String create_time;
     private int status;
+
+    private List<UserIdentify> userIdentify;
+    private List<UserRole> userRole;
+
+    public List<UserIdentify> getUserIdentify() {
+        return userIdentify;
+    }
+
+    public void setUserIdentify(List<UserIdentify> userIdentify) {
+        this.userIdentify = userIdentify;
+    }
+
+    public List<UserRole> getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(List<UserRole> userRole) {
+        this.userRole = userRole;
+    }
 
     public int getId() {
         return id;
