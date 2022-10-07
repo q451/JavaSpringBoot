@@ -6200,3 +6200,61 @@ java.sql.SQLSyntaxErrorException: Unknown column 'user_account' in 'field list'
 2022-10-07 10:22:26.911 DEBUG 22548 --- [http-nio-9001-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
 2022-10-07 10:22:53.230  INFO 22548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-10-07 10:22:53.437  INFO 22548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-07 19:57:04.376  INFO 20588 --- [main] c.e.demo.SpringBootJavaWebApplication    : Starting SpringBootJavaWebApplication using Java 1.8.0_261 on DESKTOP-1ID0S5B with PID 20588 (D:\githubOpenCode\SpringBootJavaWeb\target\classes started by iu in D:\githubOpenCode\SpringBootJavaWeb)
+2022-10-07 19:57:04.449  INFO 20588 --- [main] c.e.demo.SpringBootJavaWebApplication    : The following 1 profile is active: "dev"
+2022-10-07 19:57:07.335 DEBUG 20588 --- [main] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2022-10-07 19:57:07.339 DEBUG 20588 --- [main] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.example.demo'
+2022-10-07 19:57:07.448  INFO 20588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-07 19:57:07.453  INFO 20588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-07 19:57:07.494  INFO 20588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2022-10-07 19:57:07.666 DEBUG 20588 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\com\example\demo\mapper\user\UserAccountMapper.class]
+2022-10-07 19:57:07.667 DEBUG 20588 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\com\example\demo\mapper\user\UserInfoMapper.class]
+2022-10-07 19:57:07.667 DEBUG 20588 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\com\example\demo\mapper\user\UserRoleMapper.class]
+2022-10-07 19:57:07.668 DEBUG 20588 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userAccountMapper' and 'com.example.demo.mapper.user.UserAccountMapper' mapperInterface
+2022-10-07 19:57:07.668 DEBUG 20588 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userAccountMapper'.
+2022-10-07 19:57:07.669 DEBUG 20588 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userInfoMapper' and 'com.example.demo.mapper.user.UserInfoMapper' mapperInterface
+2022-10-07 19:57:07.669 DEBUG 20588 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2022-10-07 19:57:07.669 DEBUG 20588 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRoleMapper' and 'com.example.demo.mapper.user.UserRoleMapper' mapperInterface
+2022-10-07 19:57:07.669 DEBUG 20588 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
+2022-10-07 19:57:10.965  INFO 20588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-10-07 19:57:11.271  INFO 20588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-07 19:57:11.271  INFO 20588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-07 19:57:14.693  INFO 20588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-07 19:57:14.693  INFO 20588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10124 ms
+2022-10-07 19:57:17.432 DEBUG 20588 --- [main] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\mapper\UserAccountMapper.xml]'
+2022-10-07 19:57:17.539 DEBUG 20588 --- [main] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\mapper\UserInfoMapper.xml]'
+2022-10-07 19:57:17.568 DEBUG 20588 --- [main] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\mapper\UserRole.xml]'
+2022-10-07 19:57:17.937 DEBUG 20588 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-07 19:57:18.194 DEBUG 20588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2022-10-07 19:57:18.361 DEBUG 20588 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-07 19:57:18.389 DEBUG 20588 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-07 19:57:18.439 DEBUG 20588 --- [main] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2022-10-07 19:57:19.217  INFO 20588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-10-07 19:57:19.299  INFO 20588 --- [main] c.e.demo.SpringBootJavaWebApplication    : Started SpringBootJavaWebApplication in 16.76 seconds (JVM running for 24.737)
+2022-10-07 19:58:22.518  INFO 1640 --- [main] c.e.d.SpringBootJavaWebApplicationTests  : Starting SpringBootJavaWebApplicationTests using Java 1.8.0_261 on DESKTOP-1ID0S5B with PID 1640 (started by iu in D:\githubOpenCode\SpringBootJavaWeb)
+2022-10-07 19:58:22.582  INFO 1640 --- [main] c.e.d.SpringBootJavaWebApplicationTests  : The following 1 profile is active: "dev"
+2022-10-07 19:58:22.690 DEBUG 1640 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@64a8c844
+2022-10-07 19:58:23.711 DEBUG 1640 --- [main] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2022-10-07 19:58:23.713 DEBUG 1640 --- [main] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.example.demo'
+2022-10-07 19:58:23.861  INFO 1640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-07 19:58:23.866  INFO 1640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-07 19:58:23.923  INFO 1640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2022-10-07 19:58:24.095 DEBUG 1640 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\com\example\demo\mapper\user\UserAccountMapper.class]
+2022-10-07 19:58:24.095 DEBUG 1640 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\com\example\demo\mapper\user\UserInfoMapper.class]
+2022-10-07 19:58:24.095 DEBUG 1640 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\com\example\demo\mapper\user\UserRoleMapper.class]
+2022-10-07 19:58:24.096 DEBUG 1640 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userAccountMapper' and 'com.example.demo.mapper.user.UserAccountMapper' mapperInterface
+2022-10-07 19:58:24.097 DEBUG 1640 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userAccountMapper'.
+2022-10-07 19:58:24.098 DEBUG 1640 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userInfoMapper' and 'com.example.demo.mapper.user.UserInfoMapper' mapperInterface
+2022-10-07 19:58:24.098 DEBUG 1640 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2022-10-07 19:58:24.098 DEBUG 1640 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRoleMapper' and 'com.example.demo.mapper.user.UserRoleMapper' mapperInterface
+2022-10-07 19:58:24.098 DEBUG 1640 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
+2022-10-07 19:58:26.009 DEBUG 1640 --- [main] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\mapper\UserAccountMapper.xml]'
+2022-10-07 19:58:26.047 DEBUG 1640 --- [main] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\mapper\UserInfoMapper.xml]'
+2022-10-07 19:58:26.063 DEBUG 1640 --- [main] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\githubOpenCode\SpringBootJavaWeb\target\classes\mapper\UserRole.xml]'
+2022-10-07 19:58:27.546 DEBUG 1640 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-07 19:58:28.145 DEBUG 1640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2022-10-07 19:58:28.203 DEBUG 1640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-07 19:58:28.225 DEBUG 1640 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-07 19:58:28.308 DEBUG 1640 --- [main] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2022-10-07 19:58:28.965  INFO 1640 --- [main] c.e.d.SpringBootJavaWebApplicationTests  : Started SpringBootJavaWebApplicationTests in 7.15 seconds (JVM running for 10.208)
+2022-10-07 19:58:29.602 DEBUG 1640 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@64a8c844, started on Fri Oct 07 19:58:22 CST 2022
