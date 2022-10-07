@@ -1,6 +1,6 @@
 package com.example.demo.util;
 
-import com.example.demo.model.UserAccount;
+import com.example.demo.model.user.UserAccount;
 
 import java.util.HashMap;
 import java.util.Map;

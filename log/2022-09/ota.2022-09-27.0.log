@@ -475,7 +475,7 @@ com.example.demo.service.exception.ServiceException: 用户输入密码错误
 2022-09-26 15:08:24.267 DEBUG 15296 --- [http-nio-9001-exec-3] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@151271037 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c074ecf] will not be managed by Spring
 2022-09-26 15:08:24.270 DEBUG 15296 --- [http-nio-9001-exec-3] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c3d8f5]
 2022-09-26 15:08:24.275 DEBUG 15296 --- [http-nio-9001-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-09-26 15:08:24.276 DEBUG 15296 --- [http-nio-9001-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.demo.model.UserAccount@48393c46]
+2022-09-26 15:08:24.276 DEBUG 15296 --- [http-nio-9001-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.demo.model.UserAccount11@48393c46]
 2022-09-26 15:08:24.277 DEBUG 15296 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2022-09-26 15:08:34.729 DEBUG 15296 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/user/select", parameters={}
 2022-09-26 15:08:34.731 DEBUG 15296 --- [http-nio-9001-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.UserController#userList()
@@ -519,7 +519,7 @@ com.example.demo.service.exception.ServiceException: 用户输入密码错误
 2022-09-26 15:11:48.640 DEBUG 9192 --- [http-nio-9001-exec-2] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1273835166 wrapping com.mysql.cj.jdbc.ConnectionImpl@6d0ce214] will not be managed by Spring
 2022-09-26 15:11:48.864 DEBUG 9192 --- [http-nio-9001-exec-2] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@508585fb]
 2022-09-26 15:11:49.050 DEBUG 9192 --- [http-nio-9001-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-09-26 15:11:49.051 DEBUG 9192 --- [http-nio-9001-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.demo.model.UserAccount@36933fea]
+2022-09-26 15:11:49.051 DEBUG 9192 --- [http-nio-9001-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.demo.model.UserAccount11@36933fea]
 2022-09-26 15:11:49.097 DEBUG 9192 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2022-09-26 15:11:52.607 DEBUG 9192 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/user/login", parameters={multipart}
 2022-09-26 15:11:52.616 DEBUG 9192 --- [http-nio-9001-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.UserController#login(UserAccount)
@@ -883,7 +883,7 @@ java.lang.NullPointerException: null
 2022-09-27 15:06:17.597 DEBUG 11308 --- [http-nio-9001-exec-7] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@49529568 wrapping com.mysql.cj.jdbc.ConnectionImpl@1aaf57bf] will not be managed by Spring
 2022-09-27 15:06:17.678 DEBUG 11308 --- [http-nio-9001-exec-7] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c999029]
 2022-09-27 15:06:17.750 DEBUG 11308 --- [http-nio-9001-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-09-27 15:06:17.752 DEBUG 11308 --- [http-nio-9001-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.demo.model.UserAccount@233629f9]
+2022-09-27 15:06:17.752 DEBUG 11308 --- [http-nio-9001-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.demo.model.UserAccount11@233629f9]
 2022-09-27 15:06:17.758 DEBUG 11308 --- [http-nio-9001-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2022-09-27 15:06:22.214 DEBUG 11308 --- [http-nio-9001-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/user/login", parameters={multipart}
 2022-09-27 15:06:22.226 DEBUG 11308 --- [http-nio-9001-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.UserController#login(UserAccount)
@@ -892,7 +892,7 @@ java.lang.NullPointerException: null
 2022-09-27 15:06:22.365 DEBUG 11308 --- [http-nio-9001-exec-8] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1320356548 wrapping com.mysql.cj.jdbc.ConnectionImpl@1aaf57bf] will not be managed by Spring
 2022-09-27 15:06:22.370 DEBUG 11308 --- [http-nio-9001-exec-8] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68ca3967]
 2022-09-27 15:06:22.370 DEBUG 11308 --- [http-nio-9001-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-09-27 15:06:22.371 DEBUG 11308 --- [http-nio-9001-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.demo.model.UserAccount@4aabd3d6]
+2022-09-27 15:06:22.371 DEBUG 11308 --- [http-nio-9001-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.demo.model.UserAccount11@4aabd3d6]
 2022-09-27 15:06:22.372 DEBUG 11308 --- [http-nio-9001-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2022-09-27 15:06:53.993 DEBUG 11308 --- [http-nio-9001-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/user/login", parameters={multipart}
 2022-09-27 15:06:54.171 DEBUG 11308 --- [http-nio-9001-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.UserController#login(UserAccount)
@@ -901,7 +901,7 @@ java.lang.NullPointerException: null
 2022-09-27 15:06:54.438 DEBUG 11308 --- [http-nio-9001-exec-9] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1314186980 wrapping com.mysql.cj.jdbc.ConnectionImpl@1aaf57bf] will not be managed by Spring
 2022-09-27 15:06:54.532 DEBUG 11308 --- [http-nio-9001-exec-9] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40930086]
 2022-09-27 15:06:54.573 DEBUG 11308 --- [http-nio-9001-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-09-27 15:06:54.575 DEBUG 11308 --- [http-nio-9001-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.demo.model.UserAccount@f69ecdf]
+2022-09-27 15:06:54.575 DEBUG 11308 --- [http-nio-9001-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.demo.model.UserAccount11@f69ecdf]
 2022-09-27 15:06:54.596 DEBUG 11308 --- [http-nio-9001-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2022-09-27 15:07:03.014 DEBUG 11308 --- [http-nio-9001-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/user/test", parameters={multipart}
 2022-09-27 15:07:03.028 DEBUG 11308 --- [http-nio-9001-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.UserController#test(UserAccount)

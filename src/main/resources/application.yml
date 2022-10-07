@@ -34,7 +34,6 @@ spring:
       mail.smtp.starttls.enable: true
       mail.smtp.starttls.required: true
 
-
 server:
   port: 9001
 
