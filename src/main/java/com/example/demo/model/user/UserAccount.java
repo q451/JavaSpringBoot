@@ -9,6 +9,17 @@ public class UserAccount {
     private String email;
     private int status;
 
+    //添加关联查询
+    private UserInfo userInfo;
+
+    public UserInfo getUserInfo() {
+        return userInfo;
+    }
+
+    public void setUserInfo(UserInfo userInfo) {
+        this.userInfo = userInfo;
+    }
+
     public int getId() {
         return id;
     }
