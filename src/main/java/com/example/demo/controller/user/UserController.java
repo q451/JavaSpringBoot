@@ -55,7 +55,16 @@ public class UserController {
     @CrossOrigin
     @RequestMapping("/user-info")
     public List<UserInfo> SelectUserInfoByUserid (String userid){
-
         return userService.selectUserInfoByUserid(userid);
+    }
+
+    @RequestMapping("/test")
+    public int Test (){
+        return 125890;
+    }
+
+    @RequestMapping("/test1")
+    public int Test1 (){
+        return 999999;
     }
 }

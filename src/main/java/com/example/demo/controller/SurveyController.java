@@ -8,6 +8,10 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Map;
@@ -20,6 +24,10 @@ public class SurveyController {
     @CrossOrigin
     @RequestMapping("get-code")
     public Map<String,Object> getCode(String email, HttpSession session){
+        //解决跨域问题
+        HttpServletResponse response = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getResponse();
+        response.addHeader("Access-Control-Allow-Origin","*");
+
         Map<String,Object> result = new HashMap<>();
         EmailUtil emailUtil = new EmailUtil();
         String code = emailUtil.randomCode();
