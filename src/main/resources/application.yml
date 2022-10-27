@@ -30,8 +30,8 @@ spring:
     timeout: 20000
 
   mail:
-    host: smtp.qq.com
-    username: 
+    host: smtp.qq.c
+    username: @qq.co
     password: 
     default-encoding: utf-8
     port: 25
