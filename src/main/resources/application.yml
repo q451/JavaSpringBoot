@@ -16,11 +16,7 @@ spring:
 #    username: root
 #    password: 123456
 
-    url: jdbc:mysql://120.48.48.165:3306/yxp_test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
-    username: root
-    password: "@yxp147258"
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
+   
   redis:
     host: 127.0.0.1
     port: 6379
@@ -35,8 +31,8 @@ spring:
 
   mail:
     host: smtp.qq.com
-    username: 1393371859@qq.com
-    password: hkdxutanxepkhhjg
+    username: 
+    password: 
     default-encoding: utf-8
     port: 25
     charset: UTF-8
