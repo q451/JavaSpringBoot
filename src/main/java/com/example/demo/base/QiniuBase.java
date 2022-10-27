@@ -12,8 +12,8 @@ import java.net.URISyntaxException;
 import java.nio.file.Paths;
 
 public class QiniuBase {
-    static String ACCESS_KEY = "kz8nN52T9NS-dDdx5NMbmDTr5BpysobQY4dCoTAK"; //这两个登录七牛 账号里面可以找到
-    static String SECRET_KEY = "vHlaAR0T8iXlSqZm5VnmwM8LayqnRJUdktsB4Tu0";
+    static String ACCESS_KEY = ""; //这两个登录七牛 账号里面可以找到
+    static String SECRET_KEY = "";
     //要上传的空间
     //对应要上传到七牛上 你的那个路径（自己建文件夹 注意设置私有）
     static String bucketname = "my-all-files-yangxp";
