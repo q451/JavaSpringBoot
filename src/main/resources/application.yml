@@ -1,12 +1,24 @@
 spring:
   #添加静态资源
+  #开发环境
   profiles:
     active: dev
-
+  #热部署
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main/java #重启目录
+      exclude: WEB-INF/**  #排除文件(不重启项目)
+    freemarker:
+      cache: false    #页面不加载缓存，修改即时生效
   datasource:
-    url: jdbc:mysql://localhost:3306/javaspringboot?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+#    url: jdbc:mysql://localhost:3306/javaspringboot?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+#    username: root
+#    password: 123456
+
+    url: jdbc:mysql://120.48.48.165:3306/yxp_test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
     username: root
-    password: 123456
+    password: "@yxp147258"
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   redis:
@@ -21,13 +33,34 @@ spring:
         min-idle: 2
     timeout: 20000
 
+  mail:
+    host: smtp.qq.com
+    username: 1393371859@qq.com
+    password: hkdxutanxepkhhjg
+    default-encoding: utf-8
+    port: 25
+    charset: UTF-8
+    protocol: smtp
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      mail.smtp.starttls.required: true
 
 server:
-  port: 9001
+  port: 8081
 
 mybatis:
   type-aliases-package: com.example.demo.mapper
   mapper-locations: classpath:mapper/*.xml
+
+mybatis-plus:
+  #配置Mapper映射文件
+  mapper-locations: classpath:/mappers/*.xml
+  # 配置Mybatis数据返回类型别名（默认别名为类名）
+  # type-aliases-package: com.example/demo
+  configuration:
+    # 自动驼峰命名
+    map-underscore-to-camel-case: false
 
 # 日志配置
 logging:

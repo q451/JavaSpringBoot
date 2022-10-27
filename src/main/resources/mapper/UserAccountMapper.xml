@@ -2,27 +2,61 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.demo.mapper.UserAccountMapper">
-    <insert id="insertOneUser" useGeneratedKeys="true" keyProperty="id">
-        insert into user_account (userid, password) values (#{userid},#{password})
+<mapper namespace="com.example.demo.mapper.user.UserAccountMapper">
+
+<!--    <resultMap type="com.example.demo.model.user.UserAccount" id="account_info">-->
+
+<!--        <result column="id" property="id"/>-->
+<!--        <result column="userid" property="userid"/>-->
+<!--        <result column="password" property="password"/>-->
+<!--        <result column="email" property="email"/>-->
+<!--        <result column="status" property="status"/>-->
+
+<!--        <association property="userInfo" javaType="com.example.demo.model.user.UserInfo">-->
+<!--            <result column="uid" property="id"/>-->
+<!--            <result column="name" property="name"/>-->
+<!--            <result column="userid" property="userid"/>-->
+<!--            <result column="age" property="age"/>-->
+<!--            <result column="email" property="email"/>-->
+<!--            <result column="ustatus" property="status"/>-->
+<!--            <result column="sex" property="sex"/>-->
+<!--            <result column="address" property="address"/>-->
+<!--            <result column="create_time" property="create_time"/>-->
+<!--        </association>-->
+
+<!--    </resultMap>-->
+
+    <insert id="add" useGeneratedKeys="true" keyProperty="id">
+        insert into user_account (userid, password, email) values (#{userid},#{password},#{email})
     </insert>
 <!--    resultMap 数据库属性名不一致的时候需要映射-->
-<!--    <resultMap id="KKK" type="com.example.demo.model.UserAccount">-->
+<!--    <resultMap id="KKK" type="com.example.demo.model.UserAccount11">-->
 <!--        <result column="数据库实际名" property="现在的名称"></result>-->
 <!--    </resultMap>-->
 <!--    <select id="findUser" resultMap="KKK">-->
 <!--        select userid from user_account where userid = #{userid}-->
 <!--    </select>-->
-    <select id="findUser" resultType="com.example.demo.model.UserAccount">
+    <select id="findByUserid" resultType="com.example.demo.model.user.UserAccount">
         select * from user_account where userid = #{userid}
     </select>
 
-<!--    <select id="selectAllUser" resultType="com.example.demo.model.UserAccount">-->
-<!--        select * from user_account where status = #{status}-->
-<!--    </select>-->
-<!--    <update id="">-->
+    <select id="selectAll" resultType="com.example.demo.model.user.UserAccount">
+        select * from user_account where status = #{status}
+    </select>
 
-<!--    </update>-->
+    <update id="changePassword" >
+        update user_account set password = #{password} where userid = #{userid}
+    </update>
+
+<!--    <select id="unionSelect" resultMap="account_info">-->
+<!--        select-->
+<!--        user_account.userid, user_account.password,user_account.id, user_account.status, user_account.email,-->
+<!--        user_info.name,user_info.age,user_info.email,user_info.address,user_info.sex,user_info.create_time,user_info.status ustatus,user_info.id uid-->
+<!--        from user_account join user_info on-->
+<!--        user_account.userid = user_info.userid-->
+<!--        and user_account.status = user_info.status-->
+<!--        and user_account.status = 1-->
+<!--    </select>-->
 
 <!--    <delete id="">-->
 

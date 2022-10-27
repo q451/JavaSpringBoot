@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.user.UserRoleMapper">
+<!--    <resultMap id="Info_role_identify" type="com.example.demo.model.user.UserInfo">-->
+<!--        <result column="id" property="id"/>-->
+<!--        <result column="name" property="name"/>-->
+<!--        <result column="userid" property="userid"/>-->
+<!--        <result column="age" property="age"/>-->
+<!--        <result column="email" property="email"/>-->
+<!--        <result column="status" property="status"/>-->
+<!--        <result column="sex" property="sex"/>-->
+<!--        <result column="address" property="address"/>-->
+<!--        <result column="create_time" property="create_time"/>-->
+<!--&lt;!&ndash;        一对多查询&ndash;&gt;-->
+<!--        <collection property="userIdentify" ofType="com.example.demo.model.user.UserIdentify">-->
+<!--            <result column="fid" property="id"/>-->
+<!--            <result column="userid" property="userid"/>-->
+<!--            <result column="identify" property="identify"/>-->
+<!--            <result column="fstatus" property="status"/>-->
+
+<!--            <association property="commonIdentify" javaType="com.example.demo.model.common.CommonIdentify">-->
+<!--                <result column="cfid" property="id"/>-->
+<!--                <result column="cfname" property="name"/>-->
+<!--                <result column="status" property="status"/>-->
+<!--            </association>-->
+
+<!--        </collection>-->
+
+<!--        <collection property="userRole" ofType="com.example.demo.model.user.UserRole">-->
+<!--            <result column="rid" property="id"/>-->
+<!--            <result column="userid" property="userid"/>-->
+<!--            <result column="role" property="role"/>-->
+<!--            <result column="rstatus" property="status"/>-->
+<!--        </collection>-->
+
+<!--    </resultMap>-->
+<!--    <select id="selectOneUserByUserid" resultMap="Info_role_identify">-->
+<!--        select-->
+<!--        user_info.name,user_info.age,user_info.email,user_info.address,user_info.sex,user_info.create_time,user_info.status,user_info.id,-->
+<!--        user_identify.id fid,user_identify.identify,user_identify.userid,user_identify.status fstatus,-->
+<!--        user_role.id rid,user_role.role,user_role.userid,user_role.status rstatus,-->
+<!--        common_identify.name cfname,common_identify.id cfid-->
+<!--        from user_info-->
+<!--        join user_identify on user_info.userid = user_identify.userid and user_info.status = user_identify.status-->
+<!--        join user_role on user_info.userid = user_role.userid and user_info.status = user_role.status-->
+<!--        join common_identify on common_identify.id = user_identify.identify and common_identify.status = user_identify.status-->
+<!--        and user_info.status = 1 and user_info.userid = #{userid}-->
+<!--    </select>-->
+</mapper>
