@@ -1,15 +1,20 @@
 package com.example.demo;
 
-import com.example.demo.base.RedisBase;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.example.demo.mapper.mybatisPlus.UserAccountTestMapper;
+import com.example.demo.mapper.user.UserAccountMapper;
+import com.example.demo.model.mybatisPlus.UserAccountTest;
 import com.example.demo.util.RedisUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import javax.annotation.Resource;
-import javax.servlet.http.HttpSession;
+import java.util.Iterator;
+import java.util.List;
+
 
 @SpringBootTest
 class SpringBootJavaWebApplicationTests {
@@ -18,31 +23,19 @@ class SpringBootJavaWebApplicationTests {
 	private RedisUtil redisUtil;
 	@Autowired
 	private JavaMailSender javaMailSender ;
-
+	@Autowired
+	private UserAccountMapper userAccountMapper;
+	@Autowired
+	private UserAccountTestMapper userAccountTestMapper;
 	@Test
-	void contextLoads() {
-
-//		EmailUtil email = new EmailUtil();
-//		email.sendSimpleMail("19301105@bjtu.edu.cn","1111","22222");
-		//判断邮箱验证码是否正确
-//        String email = null;
-//        String isCode = null;
-//        try {
-//            email = (String) session.getAttribute("email");
-//            isCode = (String) session.getAttribute("code");
-//        } catch (Exception e) {
-//            result.put("message","请发送邮箱验证码");
-//        }
-//        String inputEmail = userAccount.getEmail();
-//        String code = userAccount.getCode();
-//
-//        if (code.equals("")){
-//            result.put("message","输入邮箱验证码");
-//        }
-//        if (!email.equals(inputEmail) && !code.equals(isCode)){
-//            result.put("message","邮箱验证码或者邮箱账号输入错误");
-//        }
-		System.out.println(1111);
+	void contextLoads(){
+		IPage<UserAccountTest> page = new Page(1,2);
+		QueryWrapper<UserAccountTest> queryWrapper = new QueryWrapper<>();
+		queryWrapper.eq("status", 1);
+		IPage<UserAccountTest> userIPage = userAccountTestMapper.selectPage(page, queryWrapper);
+		long total = userIPage.getSize();
+		System.out.println("记录数：" + total);
+		userIPage.getRecords().forEach(user -> System.out.println(user));
 	}
 
 }

@@ -1,6 +1,8 @@
 package com.example.demo.mapper.user;
 import com.example.demo.model.user.UserAccount;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
+
 import java.util.List;
 import java.util.Map;
 
@@ -16,5 +18,8 @@ public interface UserAccountMapper {
     List<UserAccount> selectAll(int status);
 
     List<UserAccount> unionSelect();
+
+    @Select("select * from user_account")
+    List<UserAccount> selectTest();
 
 }
